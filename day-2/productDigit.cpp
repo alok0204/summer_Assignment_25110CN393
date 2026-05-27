@@ -4,12 +4,19 @@ int main() {
     int n,z,p=1;
     cout<<"enter the number = ";
     cin>>n;
+    if(n==0) 
+    {
+        p = 0;
+    } 
+    else
+     {
     while (n>0)
     {
      z=n%10;
      n/=10;
      p*=z; 
     }
+}
     cout<<p;
     return 0;
 }
